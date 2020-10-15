@@ -5,9 +5,12 @@ import Todo from './Todo'
 class TodosContainner extends Component {
     
     renderTodo = () => this.props.todos.map((todo, id ) => <Todo key={id} text={todo} />)
+    
     render() {
         return (
-            <div></div>
+            <div>
+                {this.renderTodo()}
+            </div>
         )
     }
 }
